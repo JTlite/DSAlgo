@@ -1,0 +1,5 @@
+Tricks:
+
+1.  Indegree of a person or node is the number of nodes that trusts a given specific node and outdegree of a person or node is the number of nodes that are trusted by given specific node. (Leetcode - 997)
+// problems based on outdegree and indegree - pattern 1- easy
+
