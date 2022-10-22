@@ -1,0 +1,9 @@
+In java :
+
+1.Implementation using prebuilt :
+
+                Stack<Integer> = new Stack<Integer>();
+                Stack<Character> st = new Stack<Character>();
+
+2.Implementation can also be done using Linkedlist / Array List:
+

@@ -1,0 +1,62 @@
+Strings in java:
+
+1. String in java is immutable. It is only used in immutable operations such as compare, length, replace, indexOf,charAt, contains, trim, isEmpty,concat, substring etc.,
+https://www.javatpoint.com/java-string
+
+                String name = new String("JAHNAVI");
+
+2. To perform operations to change a string, use the classes - StringBuffer, StringBuilder ;
+
+3. String Builder and String Buffer classes are used to create mutable strings. They differ in synchronisation. String builder is fast and is used in single threads. String Buffer used for thread safety in multi thread scenenarios.
+
+                StringBuilder myName = new StringBuilder(name);
+                StringBuffer myName = new StringBuffer(name);
+
+4.Conversions in String/StringBuilder/StringBuffer :
+
+    1. String to StringBuilder/StringBuffer -
+                    StringBuilder str = new StringBuilder(name);
+                    StringBuffer str = new StringBuffer(name);
+
+    2.  StringBuffer/StringBuilder to String - (use toString())
+                    StringBuffer str = new StringBuffer("name");
+                    String name = str.toString();
+
+    3.  StringBuffer to StringBuilder / vice-versa -
+                    StringBuffer strbuf = new StringBuffer("Buffer");
+                    String str = strbuf.toString();
+                    StringBuilder strbui = new StringBuilder(str);
+
+5. StringBuilder operations:
+length in string -> capacity 
+https://www.geeksforgeeks.org/stringbuilder-class-in-java-with-examples/
+
+6. reverse a string - 
+        1. use string builder/string buffer - reverse()
+        2. use toCharArray and add to new string from back.
+                
+                import java.util.Scanner;
+                class GFG {
+                    public static void main (String[] args) {
+                
+                        Scanner scanner = new Scanner(System.in);
+                        String Str = scanner.nextLine();
+                        char[] arr = Str.toCharArray();
+                                
+                        String rev = "";
+                    
+                for(int i = Str.length() - 1; i >= 0; i--)
+                {
+                rev = rev + Str.charAt(i);
+                }
+                
+                System.out.println(rev);
+                        
+                    }
+                }
+
+
+
+
+
+
